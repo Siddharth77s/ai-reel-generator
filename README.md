@@ -115,8 +115,8 @@ Add screenshots of:
 
 Siddharth Shinde
 
-- GitHub: https://github.com/YOUR_USERNAME
-- LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN/
+- GitHub: https://github.com/siddharth77s
+- LinkedIn: https://www.linkedin.com/in/siddharthshinde
 
 ## 📄 License
 
