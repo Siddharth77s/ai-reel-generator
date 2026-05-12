@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+coverage/
+
+# Environment variables (IMPORTANT: prevents API keys from being uploaded)
+.env
+.env.*
+!.env.example
+
+# Local configuration
+*.local
+
+# Vite
+.vite/
+.vite-source-tags.js
+
+# Vercel
+.vercel/
+
+# IDE files
+.vscode/
+!.vscode/extensions.json
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
