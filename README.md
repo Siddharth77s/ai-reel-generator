@@ -1,73 +1,123 @@
-# React + TypeScript + Vite
+# AI Reel Script & Thumbnail Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered platform for content creators to generate viral short-form video content using Google Gemini.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 User Authentication (Login / Signup)
+- ✍️ AI Script Generation
+- 🎯 Viral Hooks
+- 📝 Captions & Hashtags
+- 🎬 Scene Breakdown
+- 🖼️ Thumbnail Generation
+- 📊 Viral Score Prediction
+- 📁 Script Management (Save, Edit, Duplicate, Organize)
+- 📈 Content Dashboard
+- ☁️ Deployed on Vercel
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React.js
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
 
-## Expanding the ESLint configuration
+### AI Integration
+- Google Gemini API (`gemini-2.5-flash`)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Deployment
+- Vercel
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/YOUR_USERNAME/ai-reel-generator.git
+cd ai-reel-generator
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔑 Environment Variables
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Create a `.env` file in the root directory:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key
 ```
+
+## ▶️ Run Locally
+
+```bash
+npm run dev
+```
+
+## 🌐 Deployment
+
+Deploy easily using Vercel:
+
+1. Push your code to GitHub.
+2. Import the repository into Vercel.
+3. Add `VITE_GEMINI_API_KEY` in Environment Variables.
+4. Deploy.
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── contexts/
+├── services/
+│   └── gemini.ts
+├── utils/
+└── App.tsx
+```
+
+## 🎯 Assignment Requirements Covered
+
+- Authentication
+- AI Script Generation
+- Thumbnail Generation
+- Script Management
+- Dashboard
+- Bonus Features:
+  - Viral Score Prediction
+  - Trending Suggestions
+  - Storyboard Placeholder
+
+## ⚠️ Note About Gemini Quota
+
+This project uses the free tier of Google Gemini. If you encounter:
+
+- `429 Too Many Requests`
+
+wait a few minutes or use a new API key.
+
+## 📸 Screenshots
+
+Add screenshots of:
+- Dashboard
+- Script Generator
+- Thumbnail Generator
+- Scripts Library
+
+## 🔮 Future Enhancements
+
+- Real Gemini image generation
+- Voice synthesis
+- Subtitle generation
+- Collaboration
+- Multi-platform optimization
+
+## 👨‍💻 Author
+
+Siddharth Shinde
+
+- GitHub: https://github.com/YOUR_USERNAME
+- LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN/
+
+## 📄 License
+
+This project is developed for educational and assignment purposes.
